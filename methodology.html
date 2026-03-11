@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.05em;color:#f0f6fc;margin-right:10px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.78em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:1.9em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+.ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+</style>
+<title>📋 Metodología — Neuroinflamación y Enfermedades Neurodegenerativas</title>
+</head><body>
+<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" class="active">📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>📋 Metodología del Dataset</h1>
+<p class="subtitle">Fuentes de datos, variables incluidas y proceso de compilación</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span><span class="badge">CC0 1.0</span>
+</div>
+<div class="abstract"><strong>Descripción:</strong> Base de datos integral que combina 8 dimensiones de datos para las tres principales enfermedades neurodegenerativas: Alzheimer (AD), Parkinson (PD) y Esclerosis Múltiple (MS), con enfoque en mecanismos neuroinflamatorios. Los datos fueron compilados mediante búsqueda sistemática en literatura peer-reviewed (PubMed/NCBI), metaanálisis y reportes de organismos internacionales (WHO, Mayo Clinic, MSBase), asistida por Perplexity AI en febrero de 2026.</div>
+<h2>Dimensiones del Dataset</h2>
+<table><thead><tr><th>Dimensión</th><th>Variables</th><th>Fuentes</th></tr></thead>
+<tbody>
+<tr><td>Biomarcadores moleculares (LCR/sangre)</td><td>13 (IL-1β, IL-6, IL-8, TNF-α, IFN-γ, TGF-β, Aβ42, Tau, p-Tau, α-Sin, NfL, GFAP, YKL-40)</td><td>PMC/NCBI, metaanálisis 2015-2026</td></tr>
+<tr><td>Neuroimagen</td><td>6 (MRI volumétrico, PET amiloide, PET-FDG, DAT-SPECT, T2-FLAIR)</td><td>ADNI, Mayo Clinic, MSBase</td></tr>
+<tr><td>Escalas clínicas</td><td>3 (CDR, UPDRS, EDSS) + tasas progresión</td><td>GDS, UPDRS Consortium, MSIF</td></tr>
+<tr><td>Epidemiología</td><td>Prevalencia, incidencia, sexo, edad inicio, supervivencia</td><td>WHO, GBD 2022, MSIF</td></tr>
+<tr><td>Genética</td><td>8 variantes de riesgo + odds ratios</td><td>GWAS Catalog, metaanálisis</td></tr>
+<tr><td>Tratamientos</td><td>10 fármacos aprobados + eficacia</td><td>FDA, EMA, ensayos pivotales</td></tr>
+<tr><td>Ensayos clínicos</td><td>9 ensayos neuroinflamación 2020-2024</td><td>ClinicalTrials.gov</td></tr>
+<tr><td>Carga económica</td><td>Costes directos/indirectos/totales</td><td>Alzheimer's Disease International, Parkinson's UK, MSIF</td></tr>
+</tbody></table>
+<h2>Archivo</h2>
+<p>1 archivo CSV: <strong>Neuroinflammation_Neurodegenerative_Disorders_Database.csv</strong> (11.6 KB). Formato tabular con variables en columnas y registros por enfermedad/subgrupo en filas.</p>
+<h2>Limitaciones</h2>
+<p>Los valores de biomarcadores representan promedios de metaanálisis y pueden presentar variabilidad interestudio considerable. Los datos epidemiológicos son estimaciones globales que no reflejan variaciones regionales significativas. Los datos de ensayos clínicos corresponden a la situación reportada en febrero de 2026.</p>
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+  author={de la Serna, Juan Moises},
+  title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
+  year={2026},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/X2TQQA},
+  url={https://doi.org/10.7910/DVN/X2TQQA}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+</body></html>
