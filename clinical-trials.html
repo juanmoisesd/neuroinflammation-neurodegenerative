@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.05em;color:#f0f6fc;margin-right:10px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.78em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:1.9em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+.ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+</style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<title>🔬 Ensayos Clínicos en Neuroinflamación 2020-2024</title>
+</head><body>
+<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" class="active">🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>🔬 Ensayos Clínicos en Neuroinflamación 2020-2024</h1>
+<p class="subtitle">Terapias anti-neuroinflamatorias en Alzheimer, Parkinson y Esclerosis Múltiple</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span><span class="badge">9 ensayos activos/completados</span>
+</div>
+<div class="abstract"><strong>Resumen:</strong> El período 2020-2024 ha visto una expansión sin precedentes de ensayos clínicos dirigidos a mecanismos neuroinflamatorios. En AD, los ensayos más avanzados apuntan a TNF-α (Fase 2, n=420) y microglía activada (Fase 3, n=1680). En PD, los ensayos anti-α-sinucleína (Fase 2, n=316) y LRRK2 (Fase 2, n=248) representan el enfoque más prometedor. En MS, los inhibidores BTK en Fase 3 (n=890) podrían revolucionar el tratamiento progresivo. El tamaño total de participantes supera las 4,500 personas en ensayos activos/recientes.</div>
+<div class="kpis">
+<div class="kpi"><div class="val">1680</div><div class="lbl">🧠 Mayor ensayo AD<br>(Microglía, Fase 3)</div></div>
+<div class="kpi"><div class="val">890</div><div class="lbl">🧬 Mayor ensayo MS<br>(BTKi, Fase 3)</div></div>
+<div class="kpi"><div class="val">9</div><div class="lbl">🔬 Ensayos activos/<br>completados 2020-2024</div></div>
+<div class="kpi"><div class="val">3</div><div class="lbl">📊 En Fase 3<br>(mayor evidencia)</div></div>
+</div>
+<h2>Ensayos Clínicos por Enfermedad y Fase</h2>
+<div class="chart-wrap"><div id="ct1" style="height:400px"></div></div>
+<h2>Tamaño de Muestra por Ensayo</h2>
+<div class="chart-wrap"><div id="ct2" style="height:380px"></div></div>
+<h2>Estado de los Ensayos 2020-2024</h2>
+<div class="chart-wrap"><div id="ct3" style="height:360px"></div></div>
+<h2>Tabla de Ensayos Clínicos</h2>
+<table><thead><tr><th>Enfermedad</th><th>Diana Terapéutica</th><th>Fase</th><th>N participantes</th><th>Estado</th></tr></thead>
+<tbody><tr><td style="color:#f85149"><strong>AD</strong></td><td>TNF-α</td><td>Phase 2</td><td>420</td><td style="color:#e3b341">Active</td></tr><tr><td style="color:#f85149"><strong>AD</strong></td><td>IL-6</td><td>Phase 1</td><td>180</td><td style="color:#3fb950">Completed</td></tr><tr><td style="color:#f85149"><strong>AD</strong></td><td>Microglia</td><td>Phase 3</td><td>1680</td><td style="color:#58a6ff">Recruiting</td></tr><tr><td style="color:#e3b341"><strong>PD</strong></td><td>α-Syn</td><td>Phase 2</td><td>316</td><td style="color:#e3b341">Active</td></tr><tr><td style="color:#e3b341"><strong>PD</strong></td><td>LRRK2</td><td>Phase 2</td><td>248</td><td style="color:#e3b341">Active</td></tr><tr><td style="color:#e3b341"><strong>PD</strong></td><td>GLP-1</td><td>Phase 3</td><td>156</td><td style="color:#3fb950">Completed</td></tr><tr><td style="color:#58a6ff"><strong>MS</strong></td><td>BTK inhibitor</td><td>Phase 3</td><td>890</td><td style="color:#58a6ff">Recruiting</td></tr><tr><td style="color:#58a6ff"><strong>MS</strong></td><td>IL-17</td><td>Phase 2</td><td>340</td><td style="color:#e3b341">Active</td></tr><tr><td style="color:#58a6ff"><strong>MS</strong></td><td>Neuroprotec.</td><td>Phase 2</td><td>260</td><td style="color:#e3b341">Active</td></tr></tbody></table>
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+  author={de la Serna, Juan Moises},
+  title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
+  year={2026},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/X2TQQA},
+  url={https://doi.org/10.7910/DVN/X2TQQA}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+<script>
+const DIS=["Alzheimer (AD)","Parkinson (PD)","Esclerosis Múltiple (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const TRIALS=[{"dis":"AD","target":"TNF-α","phase":"Phase 2","n":420,"status":"Active"},{"dis":"AD","target":"IL-6","phase":"Phase 1","n":180,"status":"Completed"},{"dis":"AD","target":"Microglia","phase":"Phase 3","n":1680,"status":"Recruiting"},{"dis":"PD","target":"α-Syn","phase":"Phase 2","n":316,"status":"Active"},{"dis":"PD","target":"LRRK2","phase":"Phase 2","n":248,"status":"Active"},{"dis":"PD","target":"GLP-1","phase":"Phase 3","n":156,"status":"Completed"},{"dis":"MS","target":"BTK inhibitor","phase":"Phase 3","n":890,"status":"Recruiting"},{"dis":"MS","target":"IL-17","phase":"Phase 2","n":340,"status":"Active"},{"dis":"MS","target":"Neuroprotec.","phase":"Phase 2","n":260,"status":"Active"}];
+const disColMap={'AD':DCOLS[0],'PD':DCOLS[1],'MS':DCOLS[2]};
+const phases=['Phase 1','Phase 2','Phase 3'];
+Plotly.newPlot('ct1',DIS.map((d,di)=>{
+  const ds=['AD','PD','MS'][di];
+  return {type:'bar',name:d,x:phases,y:phases.map(p=>TRIALS.filter(t=>t.dis===ds&&t.phase===p).length),marker:{color:DCOLS[di]}};
+}),{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  xaxis:{color:'#8b949e'},yaxis:{title:'Número de ensayos',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:60},height:400});
+Plotly.newPlot('ct2',[{type:'bar',x:TRIALS.map(t=>t.target+' ('+t.dis+')'),y:TRIALS.map(t=>t.n),
+  marker:{color:TRIALS.map(t=>disColMap[t.dis])},text:TRIALS.map(t=>t.n),textposition:'outside',
+  hovertemplate:'<b>%{x}</b><br>N: %{y}<extra></extra>'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:10},
+  xaxis:{color:'#8b949e',tickangle:-30},yaxis:{title:'Participantes',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:60,r:20,t:20,b:120},height:380});
+const statusCounts={Active:TRIALS.filter(t=>t.status==='Active').length,
+  Completed:TRIALS.filter(t=>t.status==='Completed').length,
+  Recruiting:TRIALS.filter(t=>t.status==='Recruiting').length};
+Plotly.newPlot('ct3',[{type:'pie',labels:Object.keys(statusCounts),values:Object.values(statusCounts),
+  marker:{colors:['#e3b341','#3fb950','#58a6ff']},textinfo:'label+percent'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  legend:{bgcolor:'#0d1117'},margin:{l:20,r:20,t:20,b:20},height:360});
+</script>
+</body></html>
