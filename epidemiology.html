@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.05em;color:#f0f6fc;margin-right:10px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.78em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:1.9em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+.ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+</style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<title>🌍 Epidemiología de Enfermedades Neurodegenerativas</title>
+<meta name="description" content="Epidemiología global de Alzheimer, Parkinson y Esclerosis Múltiple: prevalencia, incidencia, ratio sexo, edad de inicio y supervivencia.">
+</head><body>
+<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" class="active">🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>🌍 Epidemiología Global</h1>
+<p class="subtitle">Prevalencia, incidencia, distribución por sexo, edad de inicio y supervivencia — Alzheimer, Parkinson, Esclerosis Múltiple</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span><span class="badge">WHO / MSBase</span>
+</div>
+<div class="abstract"><strong>Resumen:</strong> Las tres enfermedades neurodegenerativas analizadas representan una carga epidemiológica creciente a nivel global, impulsada por el envejecimiento poblacional. Alzheimer afecta a 50M personas, con proyección de 152M para 2050. Parkinson afecta a 10M y es la enfermedad neurológica de más rápido crecimiento (+74% en 25 años). Esclerosis Múltiple afecta a 2.9M y tiene un marcado sesgo femenino (2.3:1). Las tasas de incidencia por 100,000 habitantes son 15.8 (AD), 14.1 (PD) y 5.2 (MS).</div>
+<div class="kpis">
+<div class="kpi"><div class="val">62.9M</div><div class="lbl">🌍 Total personas afectadas<br>(3 enfermedades)</div></div>
+<div class="kpi"><div class="val">152M</div><div class="lbl">📈 Proyección AD<br>para 2050</div></div>
+<div class="kpi"><div class="val">+74%</div><div class="lbl">📈 Crecimiento PD<br>últimos 25 años</div></div>
+<div class="kpi"><div class="val">2.3:1</div><div class="lbl">👩 Ratio F:M<br>en MS</div></div>
+</div>
+<h2>Prevalencia Global (Millones de Personas)</h2>
+<div class="chart-wrap"><div id="ep1" style="height:380px"></div></div>
+<h2>Distribución por Sexo — Ratio Femenino:Masculino</h2>
+<div class="chart-wrap"><div id="ep2" style="height:360px"></div></div>
+<h2>Edad de Inicio vs Supervivencia Media</h2>
+<div class="chart-wrap"><div id="ep3" style="height:380px"></div></div>
+<h2>Incidencia por 100,000 Habitantes</h2>
+<div class="chart-wrap"><div id="ep4" style="height:360px"></div></div>
+<h2>Tabla Epidemiológica Completa</h2>
+<table><thead><tr><th>Parámetro</th><th class="ad">Alzheimer (AD)</th><th class="pd">Parkinson (PD)</th><th class="ms">Esclerosis Múltiple</th></tr></thead>
+<tbody>
+<tr><td>Prevalencia global</td><td class="ad">50M</td><td class="pd">10M</td><td class="ms">2.9M</td></tr>
+<tr><td>Incidencia /100k/año</td><td class="ad">15.8</td><td class="pd">14.1</td><td class="ms">5.2</td></tr>
+<tr><td>Ratio F:M</td><td class="ad">0.6:0.4 (~iguales)</td><td class="pd">0.5:0.5 (~iguales)</td><td class="ms">2.3:1 (más mujeres)</td></tr>
+<tr><td>Edad media inicio</td><td class="ad">72 años</td><td class="pd">60 años</td><td class="ms">32 años</td></tr>
+<tr><td>Supervivencia media</td><td class="ad">8 años post-dx</td><td class="pd">15 años post-dx</td><td class="ms">~normal (30+ años)</td></tr>
+<tr><td>Proyección 2050</td><td class="ad">152M</td><td class="pd">25M</td><td class="ms">4M+</td></tr>
+</tbody></table>
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+  author={de la Serna, Juan Moises},
+  title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
+  year={2026},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/X2TQQA},
+  url={https://doi.org/10.7910/DVN/X2TQQA}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+<script>
+const DIS=["Alzheimer (AD)","Parkinson (PD)","Esclerosis Múltiple (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const EPI={"prevalence_M":[50,10,2.9],"incidence_100k":[15.8,14.1,5.2],"sexRatio_F_M":[0.6,0.5,2.3],"ageOnset":[72,60,32],"survivalYrs":[8,15,30]};
+Plotly.newPlot('ep1',[{type:'bar',x:DIS,y:EPI.prevalence_M,marker:{color:DCOLS},text:EPI.prevalence_M.map(v=>v+'M'),textposition:'outside'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},xaxis:{color:'#8b949e'},yaxis:{title:'Millones personas',color:'#8b949e',gridcolor:'#30363d'},margin:{l:70,r:20,t:20,b:60},height:380});
+Plotly.newPlot('ep2',[
+  {type:'bar',name:'Mujeres',x:DIS,y:EPI.sexRatio_F_M.map(r=>Math.round(r/(1+r)*100)),marker:{color:'#d2a8ff'}},
+  {type:'bar',name:'Hombres',x:DIS,y:EPI.sexRatio_F_M.map(r=>Math.round(1/(1+r)*100)),marker:{color:'#58a6ff'}}
+],{barmode:'stack',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  xaxis:{color:'#8b949e'},yaxis:{title:'% del total',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:60}});
+Plotly.newPlot('ep3',[{type:'scatter',mode:'markers+text',
+  x:EPI.ageOnset,y:EPI.survivalYrs,text:DIS,textposition:'top center',
+  marker:{size:EPI.prevalence_M.map(v=>v/2+8),color:DCOLS,opacity:0.85},
+  hovertemplate:'<b>%{text}</b><br>Edad inicio: %{x}<br>Supervivencia: %{y} años<extra></extra>'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  xaxis:{title:'Edad media de inicio (años)',color:'#8b949e',gridcolor:'#30363d'},
+  yaxis:{title:'Supervivencia post-dx (años)',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:70,r:20,t:20,b:60},height:380});
+Plotly.newPlot('ep4',[{type:'bar',x:DIS,y:EPI.incidence_100k,marker:{color:DCOLS},text:EPI.incidence_100k,textposition:'outside'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},xaxis:{color:'#8b949e'},yaxis:{title:'Casos nuevos/100k/año',color:'#8b949e',gridcolor:'#30363d'},margin:{l:70,r:20,t:20,b:60}});
+</script>
+</body></html>
