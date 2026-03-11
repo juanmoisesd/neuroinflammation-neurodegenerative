@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.05em;color:#f0f6fc;margin-right:10px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.78em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:1.9em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+.ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+</style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<title>🧬 Esclerosis Múltiple (MS) — Biomarcadores, Neuroimagen y Progresión | DOI: 10.7910/DVN/X2TQQA</title>
+<meta name="description" content="Análisis científico de Esclerosis Múltiple (MS): biomarcadores en LCR, neuroimagen, progresión clínica, genética y tratamientos. DOI: 10.7910/DVN/X2TQQA">
+</head><body>
+<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" class="active">🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" >📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>🧬 Esclerosis Múltiple (MS): Neuroinflamación y Biomarcadores</h1>
+<p class="subtitle">Biomarcadores moleculares, neuroimagen, progresión clínica y tratamientos — DOI: 10.7910/DVN/X2TQQA</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span><span class="badge">CC0 1.0</span>
+</div>
+<div class="abstract" style="border-color:#58a6ff"><strong>Resumen:</strong> Esclerosis Múltiple (MS): enfermedad autoinmune desmielinizante mediada por linfocitos T (Th1/Th17) y células B autorreactivas. IFN-γ en LCR es el biomarcador más específico (ratio 24.8x). Las lesiones T2-FLAIR son el gold standard diagnóstico. HLA-DRB1*15:01 (OR=3.1) es el principal factor genético. Ratio mujer:hombre de 2.3:1. Natalizumab (68% eficacia) y ocrelizumab (46%) son los tratamientos más efectivos.</div>
+<div class="kpis"><div class="kpi"><div class="val" style="color:#58a6ff">2.9M</div><div class="lbl">🌍 Prevalencia global</div></div>
+   <div class="kpi"><div class="val" style="color:#58a6ff">24.8x</div><div class="lbl">🔬 IFN-γ LCR<br>vs control</div></div>
+   <div class="kpi"><div class="val" style="color:#58a6ff">18</div><div class="lbl">📡 Lesiones T2-FLAIR<br>promedio</div></div>
+   <div class="kpi"><div class="val" style="color:#58a6ff">2.3:1</div><div class="lbl">👩 Ratio mujer:hombre</div></div></div>
+
+<h2>Biomarcadores en LCR — Pacientes vs Controles</h2>
+<div class="chart-wrap"><div id="d1" style="height:440px"></div></div>
+<h2>Perfil de Neuroimagen — Esclerosis Múltiple (MS)</h2>
+<div class="chart-wrap"><div id="d2" style="height:380px"></div></div>
+<h2>Progresión Clínica — EDSS (0-10)</h2>
+<div class="chart-wrap"><div id="d3" style="height:340px"></div></div>
+<h2>Factores de Riesgo Genético</h2>
+<div class="chart-wrap"><div id="d4" style="height:320px"></div></div>
+<h2>Tratamientos Aprobados</h2>
+<div class="chart-wrap"><div id="d5" style="height:320px"></div></div>
+
+<h2>Tabla: Biomarcadores en LCR — Esclerosis Múltiple (MS)</h2>
+<table><thead><tr><th>Biomarcador</th><th>Control</th><th>Pacientes MS</th><th>Ratio</th></tr></thead>
+<tbody><tr><td><strong>IL-1β (pg/mL)</strong></td><td>2</td><td style="color:#58a6ff">15.7</td><td style="color:#f85149">7.85x</td></tr><tr><td><strong>IL-6 (pg/mL)</strong></td><td>1.4</td><td style="color:#58a6ff">19.3</td><td style="color:#f85149">13.79x</td></tr><tr><td><strong>IL-8 (pg/mL)</strong></td><td>8.1</td><td style="color:#58a6ff">26.4</td><td style="color:#f85149">3.26x</td></tr><tr><td><strong>TNF-α (pg/mL)</strong></td><td>3</td><td style="color:#58a6ff">16.2</td><td style="color:#f85149">5.4x</td></tr><tr><td><strong>IFN-γ (pg/mL)</strong></td><td>2.1</td><td style="color:#58a6ff">24.8</td><td style="color:#f85149">11.81x</td></tr><tr><td><strong>TGF-β (pg/mL)</strong></td><td>178</td><td style="color:#58a6ff">380</td><td style="color:#f85149">2.13x</td></tr><tr><td><strong>Aβ42 (pg/mL)</strong></td><td>1080</td><td style="color:#58a6ff">970</td><td style="color:#8b949e">0.9x</td></tr><tr><td><strong>Tau total (pg/mL)</strong></td><td>170</td><td style="color:#58a6ff">195</td><td style="color:#8b949e">1.15x</td></tr><tr><td><strong>p-Tau (pg/mL)</strong></td><td>16</td><td style="color:#58a6ff">19</td><td style="color:#8b949e">1.19x</td></tr><tr><td><strong>α-Syn (ng/mL)</strong></td><td>1.2</td><td style="color:#58a6ff">1.3</td><td style="color:#8b949e">1.08x</td></tr><tr><td><strong>NfL (pg/mL)</strong></td><td>800</td><td style="color:#58a6ff">4100</td><td style="color:#f85149">5.13x</td></tr><tr><td><strong>GFAP (pg/mL)</strong></td><td>118</td><td style="color:#58a6ff">420</td><td style="color:#f85149">3.56x</td></tr><tr><td><strong>YKL-40 (ng/mL)</strong></td><td>162</td><td style="color:#58a6ff">312</td><td style="color:#f85149">1.93x</td></tr></tbody></table>
+
+<h2>Tabla: Tratamientos Aprobados</h2>
+<table><thead><tr><th>Fármaco</th><th>Mecanismo</th><th>Aprobación FDA</th><th>Eficacia</th></tr></thead>
+<tbody><tr><td><strong>Natalizumab</strong></td><td>Anti-α4-integrin</td><td>2004</td><td style="color:#3fb950">68%</td></tr><tr><td><strong>Ocrelizumab</strong></td><td>Anti-CD20 mAb</td><td>2017</td><td style="color:#e3b341">46%</td></tr><tr><td><strong>Cladribina</strong></td><td>Lymphocyte depl.</td><td>2019</td><td style="color:#3fb950">55%</td></tr></tbody></table>
+
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+  author={de la Serna, Juan Moises},
+  title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
+  year={2026},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/X2TQQA},
+  url={https://doi.org/10.7910/DVN/X2TQQA}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+<script>
+const bioKeys=["IL-1β (pg/mL)","IL-6 (pg/mL)","IL-8 (pg/mL)","TNF-α (pg/mL)","IFN-γ (pg/mL)","TGF-β (pg/mL)","Aβ42 (pg/mL)","Tau total (pg/mL)","p-Tau (pg/mL)","α-Syn (ng/mL)","NfL (pg/mL)","GFAP (pg/mL)","YKL-40 (ng/mL)"];const BIO={"IL-1β (pg/mL)":{"ctrl":[2.1,1.8,2],"pat":[18.4,12.3,15.7]},"IL-6 (pg/mL)":{"ctrl":[1.5,1.6,1.4],"pat":[22.1,14.8,19.3]},"IL-8 (pg/mL)":{"ctrl":[8.2,7.9,8.1],"pat":[24.6,18.2,26.4]},"TNF-α (pg/mL)":{"ctrl":[3.1,2.9,3],"pat":[19.8,11.4,16.2]},"IFN-γ (pg/mL)":{"ctrl":[2.4,2.3,2.1],"pat":[8.2,5.1,24.8]},"TGF-β (pg/mL)":{"ctrl":[180,175,178],"pat":[420,290,380]},"Aβ42 (pg/mL)":{"ctrl":[1100,1050,1080],"pat":[450,890,970]},"Tau total (pg/mL)":{"ctrl":[180,175,170],"pat":[680,210,195]},"p-Tau (pg/mL)":{"ctrl":[18,17,16],"pat":[78,22,19]},"α-Syn (ng/mL)":{"ctrl":[1.2,1.1,1.2],"pat":[0.8,3.8,1.3]},"NfL (pg/mL)":{"ctrl":[780,790,800],"pat":[3200,1850,4100]},"GFAP (pg/mL)":{"ctrl":[120,115,118],"pat":[580,320,420]},"YKL-40 (ng/mL)":{"ctrl":[165,160,162],"pat":[348,198,312]}};const NEURO={"Atrofia Hipocampal (%)":[35,8,5],"Atrofia Cerebral Anual (%)":[2.4,0.8,0.6],"PET Amiloide Positivo (%)":[85,25,10],"Hipometab. PET-FDG (%)":[78,65,40],"Déficit DAT-SPECT (%)":[20,75,15],"Lesiones T2-FLAIR (n)":[2,1,18]};
+const SCALES={"AD - CDR anual":{"scale":"CDR (0-3)","baseline":0.5,"progression":0.8,"advanced":2.5},"PD - UPDRS anual":{"scale":"UPDRS (0-199)","baseline":32,"progression":3.2,"advanced":95},"MS - EDSS anual":{"scale":"EDSS (0-10)","baseline":2.1,"progression":0.5,"advanced":6.5}};const TREAT=[{"dis":"AD","drug":"Lecanemab","mech":"Anti-Aβ mAb","eff":27,"year":2023},{"dis":"AD","drug":"Donanemab","mech":"Anti-Aβ mAb","eff":35,"year":2024},{"dis":"AD","drug":"Memantina","mech":"NMDA antagonist","eff":12,"year":2003},{"dis":"AD","drug":"Donepezil","mech":"AChE inhibitor","eff":15,"year":1996},{"dis":"PD","drug":"Levodopa","mech":"DA precursor","eff":55,"year":1970},{"dis":"PD","drug":"Pramipexol","mech":"DA agonist","eff":38,"year":1997},{"dis":"PD","drug":"Safinamida","mech":"MAO-B inhibitor","eff":22,"year":2017},{"dis":"MS","drug":"Natalizumab","mech":"Anti-α4-integrin","eff":68,"year":2004},{"dis":"MS","drug":"Ocrelizumab","mech":"Anti-CD20 mAb","eff":46,"year":2017},{"dis":"MS","drug":"Cladribina","mech":"Lymphocyte depl.","eff":55,"year":2019}];const GENES=[{"gene":"APOE ε4","dis":"AD","OR":3.7,"pop":"%carriers: 25% AD, 8% ctrl"},{"gene":"APOE ε4/ε4","dis":"AD","OR":12,"pop":"Homozigote: 2-3% pop"},{"gene":"LRRK2 G2019S","dis":"PD","OR":5.1,"pop":"1-2% sporadic PD"},{"gene":"GBA N370S","dis":"PD","OR":3.8,"pop":"5-8% PD carriers"},{"gene":"HLA-DRB1*15:01","dis":"MS","OR":3.1,"pop":"30-40% MS patients"},{"gene":"TREM2","dis":"AD","OR":2.9,"pop":"Rare; microglial activation"},{"gene":"SNCA","dis":"PD","OR":2.4,"pop":"α-synuclein triplication"},{"gene":"IL2RA","dis":"MS","OR":1.6,"pop":"Common variant MS risk"}];
+const col='#58a6ff';const disIdx=2;const ds='MS';const dis='Esclerosis Múltiple (MS)';
+const bioLabels=bioKeys.map(k=>k.split(' ')[0]);
+const ctrl=bioKeys.map(k=>BIO[k].ctrl[disIdx]);
+const pat=bioKeys.map(k=>BIO[k].pat[disIdx]);
+const sc=Object.values(SCALES)[disIdx];
+
+Plotly.newPlot('d1',[
+  {type:'bar',name:'Control',x:bioLabels,y:ctrl,marker:{color:'#30363d'}},
+  {type:'bar',name:'Pacientes '+ds,x:bioLabels,y:pat,marker:{color:col}}
+],{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e',tickangle:-30},yaxis:{title:'Concentración (LCR)',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:70,r:20,t:20,b:90},height:440});
+
+const neuroK=Object.keys(NEURO);const neuroV=neuroK.map(k=>NEURO[k][disIdx]);
+Plotly.newPlot('d2',[{type:'bar',x:neuroK.map(k=>k.split('(')[0].trim()),y:neuroV,
+  marker:{color:neuroV.map(v=>v>50?'#f85149':v>20?'#ffa657':'#3fb950')},
+  text:neuroV,textposition:'outside'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:10},
+  xaxis:{color:'#8b949e',tickangle:-20},yaxis:{title:'Valor clínico',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:60,r:20,t:20,b:100},height:380});
+
+const years=[0,2,4,6,8,10];const progV=years.map(y=>Math.round((sc.baseline+sc.progression*y)*10)/10);
+Plotly.newPlot('d3',[
+  {type:'scatter',mode:'lines+markers',name:'Progresión media',x:years,y:progV,line:{color:col,width:2.5},marker:{size:9}},
+  {type:'scatter',mode:'lines',name:'Umbral grave',x:years,y:years.map(()=>sc.advanced),line:{color:'#f85149',dash:'dash',width:2}}
+],{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:12},
+  xaxis:{title:'Años desde diagnóstico',color:'#8b949e',gridcolor:'#30363d'},
+  yaxis:{title:sc.scale,color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:70,r:20,t:20,b:60},height:340});
+
+const gD=GENES.filter(g=>g.dis===ds);
+Plotly.newPlot('d4',[{type:'bar',x:gD.map(g=>g.gene),y:gD.map(g=>g.OR),
+  marker:{color:gD.map(g=>g.OR>5?'#f85149':g.OR>2?'#ffa657':'#e3b341')},
+  text:gD.map(g=>g.OR+'x'),textposition:'outside',
+  hovertemplate:'<b>%{x}</b><br>OR: %{y}<extra></extra>'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e',tickangle:-20},yaxis:{title:'Odds Ratio',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:60,r:20,t:20,b:80},height:320});
+
+const tD=TREAT.filter(t=>t.dis===ds);
+Plotly.newPlot('d5',[{type:'bar',x:tD.map(t=>t.drug),y:tD.map(t=>t.eff),
+  marker:{color:tD.map(t=>t.eff>=50?'#3fb950':t.eff>=30?'#e3b341':'#ffa657')},
+  text:tD.map(t=>t.eff+'%'),textposition:'outside'}],
+{paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e',tickangle:-20},yaxis:{title:'% reducción deterioro',color:'#8b949e',gridcolor:'#30363d'},
+  margin:{l:60,r:20,t:20,b:80},height:320});
+</script>
+</body></html>
