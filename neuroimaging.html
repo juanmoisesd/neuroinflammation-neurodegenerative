@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',Arial,sans-serif;line-height:1.7}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
+nav{background:#161b22;border-bottom:1px solid #30363d;padding:10px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav .logo{font-weight:700;font-size:1.05em;color:#f0f6fc;margin-right:10px;white-space:nowrap}
+nav a{color:#8b949e;font-size:.78em;padding:4px 8px;border-radius:4px;white-space:nowrap}
+nav a:hover,nav a.active{background:#21262d;color:#58a6ff;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+h1{font-size:1.9em;color:#f0f6fc;margin-bottom:8px}
+h2{font-size:1.35em;color:#e6edf3;margin:28px 0 12px;border-bottom:1px solid #30363d;padding-bottom:6px}
+h3{font-size:1.1em;color:#cdd9e5;margin:18px 0 8px}
+.subtitle{color:#8b949e;font-size:1.05em;margin-bottom:20px}
+.badge{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:3px 12px;font-size:.8em;color:#8b949e;margin:0 4px 4px 0}
+.abstract{background:#161b22;border-left:4px solid #d2a8ff;border-radius:0 8px 8px 0;padding:18px 20px;margin:20px 0;font-size:.97em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:20px 0}
+.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;text-align:center}
+.kpi .val{font-size:1.9em;font-weight:700;color:#d2a8ff}
+.kpi .lbl{font-size:.82em;color:#8b949e;margin-top:4px}
+.chart-wrap{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;margin:16px 0}
+.citation{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:18px;margin:20px 0;font-size:.85em}
+.citation pre{background:#0d1117;border-radius:6px;padding:12px;overflow-x:auto;white-space:pre-wrap;font-size:.9em;color:#7ee787}
+table{width:100%;border-collapse:collapse;font-size:.88em;margin:10px 0}
+th{background:#21262d;color:#cdd9e5;padding:10px 8px;text-align:left;border-bottom:2px solid #30363d}
+td{padding:8px 8px;border-bottom:1px solid #21262d;color:#8b949e}
+tr:hover td{background:#161b22;color:#c9d1d9}
+.ad{color:#f85149}.pd{color:#e3b341}.ms{color:#58a6ff}
+footer{background:#161b22;border-top:1px solid #30363d;padding:20px;text-align:center;color:#484f58;font-size:.85em;margin-top:40px}
+</style><script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<title>📡 Neuroimagen en Enfermedades Neurodegenerativas — MRI, PET, DAT-SPECT</title>
+<meta name="description" content="Datos de neuroimagen comparados en AD, PD y MS: MRI volumétrico, PET amiloide, PET-FDG, DAT-SPECT y lesiones T2-FLAIR.">
+</head><body>
+<nav><span class="logo">🧪 Neuroinflamación</span><a href="index.html" >🏠 Inicio</a><a href="alzheimer.html" >🧠 Alzheimer (AD)</a><a href="parkinson.html" >🤝 Parkinson (PD)</a><a href="esclerosis-multiple.html" >🧬 Esclerosis Múltiple</a><a href="biomarkers.html" >🔬 Biomarcadores</a><a href="neuroimaging.html" class="active">📡 Neuroimagen</a><a href="clinical-scales.html" >📊 Escalas Clínicas</a><a href="epidemiology.html" >🌍 Epidemiología</a><a href="genetics.html" >🧬 Genética</a><a href="treatments.html" >💊 Tratamientos</a><a href="clinical-trials.html" >🔬 Ensayos Clínicos</a><a href="economic-burden.html" >💰 Carga Económica</a><a href="neuroinflammation.html" >🔥 Neuroinflamación</a><a href="comparativas.html" >⚖️ Comparativas</a><a href="methodology.html" >📋 Metodología</a><a href="data.html" >📊 Datos</a><a href="sitemap.html" >🗺 Sitemap</a></nav>
+<div class="container">
+<h1>📡 Neuroimagen en Enfermedades Neurodegenerativas</h1>
+<p class="subtitle">MRI volumétrico, PET amiloide, PET-FDG, DAT-SPECT y T2-FLAIR — Alzheimer, Parkinson, Esclerosis Múltiple</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+<span class="badge">🏦 Harvard Dataverse</span><span class="badge">DOI: 10.7910/DVN/X2TQQA</span><span class="badge">6 modalidades</span>
+</div>
+<div class="abstract"><strong>Resumen:</strong> La neuroimagen proporciona biomarcadores estructurales y funcionales críticos para el diagnóstico y monitorización de enfermedades neurodegenerativas. El PET amiloide (85% positivo en AD) permite el diagnóstico 10-15 años antes de síntomas. El DAT-SPECT (75% déficit en PD) cuantifica la pérdida dopaminérgica. Las lesiones T2-FLAIR en MRI (promedio 18 en MS) son el gold standard diagnóstico de EM. La atrofia hipocampal (35% en AD) correlaciona directamente con el deterioro cognitivo.</div>
+<div class="kpis">
+<div class="kpi"><div class="val">85%</div><div class="lbl">🧠 PET amiloide<br>positivo en AD</div></div>
+<div class="kpi"><div class="val">75%</div><div class="lbl">🤝 DAT-SPECT déficit<br>dopaminérgico PD</div></div>
+<div class="kpi"><div class="val">18</div><div class="lbl">🧬 Lesiones T2-FLAIR<br>promedio en MS</div></div>
+<div class="kpi"><div class="val">2.4%</div><div class="lbl">📏 Atrofia cerebral<br>anual en AD</div></div>
+</div>
+<h2>Parámetros de Neuroimagen por Enfermedad</h2>
+<div class="chart-wrap"><div id="n1" style="height:440px"></div></div>
+<h2>Comparativa Diagnóstica: Sensibilidad por Modalidad</h2>
+<div class="chart-wrap"><div id="n2" style="height:380px"></div></div>
+<h2>Perfil Radar Neuroimagen — AD vs PD vs MS</h2>
+<div class="chart-wrap"><div id="n3" style="height:400px"></div></div>
+<h2>Hallazgos</h2>
+<p>Cada enfermedad neurodegenerativa tiene un perfil de neuroimagen característico: AD se diferencia por atrofia hipocampal severa (35%) y alta positividad PET amiloide (85%), reflejo del depósito de Aβ. PD destaca por el déficit DAT-SPECT (75%), específico para la pérdida de neuronas dopaminérgicas en sustancia negra. MS es única por las lesiones T2-FLAIR múltiples (promedio 18), reflejo de la desmielinización multifocal. El PET-FDG hipometabolismo es el parámetro más inespecífico pero útil para seguimiento funcional en las tres enfermedades.</p>
+<table><thead><tr><th>Parámetro</th><th>Alzheimer (AD)</th><th>Parkinson (PD)</th><th>Esclerosis Múltiple</th><th>Uso Clínico</th></tr></thead>
+<tbody>
+<tr><td>Atrofia Hipocampal</td><td class="ad">35%</td><td class="pd">8%</td><td class="ms">5%</td><td>Diagnóstico AD, seguimiento</td></tr>
+<tr><td>Atrofia Cerebral Anual</td><td class="ad">2.4%/año</td><td class="pd">0.8%/año</td><td class="ms">0.6%/año</td><td>Monitorización progresión</td></tr>
+<tr><td>PET Amiloide Positivo</td><td class="ad">85%</td><td class="pd">25%</td><td class="ms">10%</td><td>Diagnóstico precoz AD</td></tr>
+<tr><td>Hipometab. PET-FDG</td><td class="ad">78%</td><td class="pd">65%</td><td class="ms">40%</td><td>Función metabólica cerebral</td></tr>
+<tr><td>Déficit DAT-SPECT</td><td class="ad">20%</td><td class="pd">75%</td><td class="ms">15%</td><td>Diagnóstico PD (gold standard)</td></tr>
+<tr><td>Lesiones T2-FLAIR</td><td class="ad">2</td><td class="pd">1</td><td class="ms">18</td><td>Diagnóstico MS (McDonald)</td></tr>
+</tbody></table>
+<div class="citation"><h3>Cómo citar</h3><p><strong>APA:</strong> de la Serna, J. M. (2026). Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data. Harvard Dataverse. https://doi.org/10.7910/DVN/X2TQQA</p><pre>@dataset{delaserna2026neuro,
+  author={de la Serna, Juan Moises},
+  title={Neuroinflammation and Neurodegenerative Disorders: Integrated Molecular Biomarkers, Neuroimaging and Clinical Progression Data},
+  year={2026},
+  publisher={Harvard Dataverse},
+  doi={10.7910/DVN/X2TQQA},
+  url={https://doi.org/10.7910/DVN/X2TQQA}
+}</pre></div>
+<footer><p>DOI: <a href="https://doi.org/10.7910/DVN/X2TQQA" target="_blank">10.7910/DVN/X2TQQA</a> &nbsp;|&nbsp; Autor: de la Serna, J. M. (UNIR) &nbsp;|&nbsp; Fuente: Literatura peer-reviewed 2013-2026 &nbsp;|&nbsp; CC0 1.0</p></footer>
+</div>
+<script>
+const DIS=["Alzheimer (AD)","Parkinson (PD)","Esclerosis Múltiple (MS)"];const DCOLS=["#f85149","#e3b341","#58a6ff"];const NEURO={"Atrofia Hipocampal (%)":[35,8,5],"Atrofia Cerebral Anual (%)":[2.4,0.8,0.6],"PET Amiloide Positivo (%)":[85,25,10],"Hipometab. PET-FDG (%)":[78,65,40],"Déficit DAT-SPECT (%)":[20,75,15],"Lesiones T2-FLAIR (n)":[2,1,18]};
+const neuroK=Object.keys(NEURO);const neuroL=neuroK.map(k=>k.split('(')[0].trim());
+Plotly.newPlot('n1',DIS.map((d,di)=>({type:'bar',name:d,x:neuroL,y:neuroK.map(k=>NEURO[k][di]),marker:{color:DCOLS[di]}})),
+{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e',tickangle:-20},yaxis:{title:'Valor (%, n, etc.)',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:60,r:20,t:20,b:100},height:440});
+
+// Sensitivity estimates per modality per disease
+const sens=[[92,75,45],[85,92,60],[90,40,35],[85,30,25]];
+const sensMod=['MRI + Hipocampo','DAT-SPECT','PET Amiloide','PET-FDG'];
+Plotly.newPlot('n2',DIS.map((d,di)=>({type:'bar',name:d,x:sensMod,y:sens.map(s=>s[di]),marker:{color:DCOLS[di]}})),
+{barmode:'group',paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#c9d1d9',size:11},
+  xaxis:{color:'#8b949e'},yaxis:{title:'Sensibilidad diagnóstica (%)',color:'#8b949e',gridcolor:'#30363d'},
+  legend:{bgcolor:'#0d1117'},margin:{l:70,r:20,t:20,b:60}});
+
+Plotly.newPlot('n3',DIS.map((d,di)=>{
+  const v=neuroK.map(k=>NEURO[k][di]);
+  const vn=v.map((x,i)=>{const max=Math.max(...neuroK.map(k=>NEURO[k][0]),20);return Math.round(x/max*100);});
+  return {type:'scatterpolar',mode:'lines',fill:'toself',name:d,
+    r:[...vn,vn[0]],theta:[...neuroL,neuroL[0]],
+    line:{color:DCOLS[di]},fillcolor:DCOLS[di]+'33'};
+}),{polar:{bgcolor:'#161b22',radialaxis:{color:'#8b949e',gridcolor:'#30363d',range:[0,100]},angularaxis:{color:'#8b949e'}},
+  paper_bgcolor:'#161b22',font:{color:'#c9d1d9',size:10},
+  legend:{bgcolor:'#0d1117',bordercolor:'#30363d'},margin:{l:60,r:60,t:40,b:60},height:400});
+</script>
+</body></html>
