@@ -1,0 +1,18 @@
+title: "Neuroinflammation and Neurodegenerative Disorders Dashboard"
+description: "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA"
+author: "Juan Moisés de la Serna Tuya"
+url: "https://juanmoisesd.github.io"
+baseurl: "/neuroinflammation-neurodegenerative"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+social:
+  name: Juan Moisés de la Serna Tuya
+  links:
+    - https://orcid.org/0000-0002-8401-8018
+    - https://juanmoisesdelaserna.es
+    - https://github.com/juanmoisesd
+doi: 10.7910/DVN/X2TQQA
+show_excerpts: true
