@@ -1,0 +1,35 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "Dataset",
+  "name": "Neuroinflammation and Neurodegenerative Disorders Dashboard",
+  "description": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "identifier": "10.7910/DVN/X2TQQA",
+  "url": "https://doi.org/10.7910/DVN/X2TQQA",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Juan Mois\u00e9s",
+      "familyName": "de la Serna Tuya",
+      "@id": "https://orcid.org/0000-0002-8401-8018",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad Internacional de La Rioja (UNIR)"
+      },
+      "email": "juanmoises.delaserna@unir.net"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "keywords": [
+    "neuroinflammation",
+    "alzheimer",
+    "parkinson",
+    "multiple-sclerosis",
+    "dashboard",
+    "open-data",
+    "neuroscience"
+  ],
+  "datePublished": "2026-03-20",
+  "version": "1.0",
+  "programmingLanguage": "Python",
+  "softwareVersion": "1.0"
+}
