@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+type: dataset
+title: "Neuroinflammation and Neurodegenerative Disorders Dashboard"
+authors:
+  - family-names: "de la Serna Tuya"
+    given-names: "Juan Moisés"
+    orcid: "https://orcid.org/0000-0002-8401-8018"
+    affiliation: "Universidad Internacional de La Rioja (UNIR)"
+    email: "juanmoises.delaserna@unir.net"
+doi: 10.7910/DVN/X2TQQA
+url: https://doi.org/10.7910/DVN/X2TQQA
+repository-code: "https://github.com/juanmoisesd/neuroinflammation-neurodegenerative"
+license: CC0-1.0
+date-released: "2026-03-20"
+keywords:
+  - "neuroinflammation"
+  - "alzheimer"
+  - "parkinson"
+  - "multiple-sclerosis"
+  - "dashboard"
+  - "open-data"
+  - "neuroscience"
+abstract: "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA"
