@@ -7,7 +7,7 @@
 
 ---
 
-*Definiciones originales en neurología clínica, enfermedad de Alzheimer, deterioro cognitivo y demencias, con aplicación a datos epidemiológicos de América Latina.*
+*Definiciones originales en neurología clínica, enfermedad de Alzheimer, deterioro cognitivo y demencias, con aplicación a datos epidemiológicos.*
 
 *Este glosario contiene definiciones originales propuestas por el autor en el contexto de esta base de datos. Las definiciones están disponibles en español e inglés para maximizar la difusión internacional. Si utilizas estas definiciones, por favor cita al autor (ver sección al final del documento).*
 
@@ -16,55 +16,55 @@
 ## A
 
 **Alzheimer (Enfermedad de) / Alzheimer's Disease**
-Trastorno neurodegenerativo progresivo e irreversible que constituye la causa más frecuente de demencia (60-70% de los casos). Se caracteriza histopatológicamente por la acumulación de placas de amiloide-β y ovillos neurofibrilares de proteína tau hiperfosforilada, con pérdida sináptica y neuronal progresiva.
-*A progressive and irreversible neurodegenerative disorder constituting the most frequent cause of dementia (60-70% of cases). It is histopathologically characterized by accumulation of amyloid-β plaques and hyperphosphorylated tau neurofibrillary tangles, with progressive synaptic and neuronal loss.*
+Trastorno neurodegenerativo progresivo que constituye la causa más frecuente de demencia (60-70% de los casos). Histopatológicamente se caracteriza por acumulación de placas de amiloide-β y ovillos neurofibrilares de tau hiperfosforilada, con pérdida sináptica y neuronal progresiva.
+*A progressive neurodegenerative disorder constituting the most frequent cause of dementia (60-70% of cases), histopathologically characterized by amyloid-β plaques, hyperphosphorylated tau neurofibrillary tangles, and progressive synaptic and neuronal loss.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## B
 
 **Biomarcadores de Demencia / Dementia Biomarkers**
-Indicadores biológicos medibles (en líquido cefalorraquídeo, sangre o mediante neuroimagen) que reflejan procesos fisiopatológicos subyacentes a las demencias, incluyendo niveles de Aβ42, proteína tau total, tau fosforilada, neurofilamento de cadena ligera (NfL) y atrofia hipocampal en RM.
-*Measurable biological indicators (in cerebrospinal fluid, blood, or through neuroimaging) reflecting pathophysiological processes underlying dementias, including Aβ42, total tau, phosphorylated tau, neurofilament light chain (NfL) levels, and hippocampal atrophy on MRI.*
+Indicadores biológicos medibles en líquido cefalorraquídeo, sangre o neuroimagen que reflejan procesos fisiopatológicos de las demencias: Aβ42, tau total, tau fosforilada, neurofilamento de cadena ligera (NfL) y atrofia hipocampal en RM.
+*Measurable biological indicators in cerebrospinal fluid, blood, or neuroimaging reflecting dementia pathophysiology: Aβ42, total tau, phosphorylated tau, neurofilament light chain (NfL), and hippocampal atrophy on MRI.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## D
 
 **Demencia / Dementia**
-Síndrome clínico caracterizado por deterioro progresivo de múltiples funciones cognitivas (memoria, lenguaje, funciones ejecutivas, orientación) de suficiente gravedad como para interferir con las actividades de la vida diaria, causado por enfermedades cerebrales diversas.
-*A clinical syndrome characterized by progressive deterioration of multiple cognitive functions (memory, language, executive functions, orientation) severe enough to interfere with daily life activities, caused by various brain diseases.*
+Síndrome clínico de deterioro progresivo de múltiples funciones cognitivas (memoria, lenguaje, funciones ejecutivas, orientación) que interfiere con las actividades de la vida diaria, causado por diversas enfermedades cerebrales.
+*A clinical syndrome of progressive deterioration of multiple cognitive functions (memory, language, executive functions, orientation) interfering with daily life activities, caused by various brain diseases.*
 *— De la Serna Tuya, J. M. (2025)*
 
 **Deterioro Cognitivo Leve (DCL) / Mild Cognitive Impairment (MCI)**
-Estado clínico intermedio entre el envejecimiento cognitivo normal y la demencia, caracterizado por déficits cognitivos objetivos que no comprometen la funcionalidad diaria. El DCL amnésico tiene alto riesgo de conversión a enfermedad de Alzheimer (10-15% anual).
-*An intermediate clinical state between normal cognitive aging and dementia, characterized by objective cognitive deficits that do not compromise daily functionality. Amnestic MCI carries high risk of conversion to Alzheimer's disease (10-15% annually).*
+Estado clínico intermedio entre el envejecimiento normal y la demencia, con déficits cognitivos objetivos que no comprometen la funcionalidad diaria. El DCL amnésico tiene un riesgo de conversión a Alzheimer del 10-15% anual.
+*An intermediate state between normal aging and dementia, with objective cognitive deficits not compromising daily functionality. Amnestic MCI carries a 10-15% annual conversion risk to Alzheimer's disease.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## F
 
 **Factores de Riesgo Modificables de Demencia / Modifiable Dementia Risk Factors**
-Variables sobre las que es posible intervenir para reducir el riesgo de demencia, identificadas por la Comisión Lancet (2020): hipertensión, tabaquismo, obesidad, depresión, inactividad física, diabetes, hipoacusia, consumo excesivo de alcohol, lesión cerebral traumática, contaminación del aire y aislamiento social.
-*Variables amenable to intervention to reduce dementia risk, identified by the Lancet Commission (2020): hypertension, smoking, obesity, depression, physical inactivity, diabetes, hearing loss, excessive alcohol consumption, traumatic brain injury, air pollution, and social isolation.*
+Variables sobre las que es posible intervenir (Comisión Lancet 2020): hipertensión, tabaquismo, obesidad, depresión, inactividad física, diabetes, hipoacusia, consumo excesivo de alcohol, lesión cerebral traumática, contaminación del aire y aislamiento social.
+*Modifiable variables (Lancet Commission 2020): hypertension, smoking, obesity, depression, physical inactivity, diabetes, hearing loss, excessive alcohol, traumatic brain injury, air pollution, and social isolation.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## H
 
 **Hipocampo / Hippocampus**
-Estructura cerebral bilateral ubicada en el lóbulo temporal medial, fundamental para la consolidación de memorias declarativas y la navegación espacial. La atrofia hipocampal es el biomarcador estructural más precoz de la enfermedad de Alzheimer.
-*A bilateral brain structure located in the medial temporal lobe, fundamental for declarative memory consolidation and spatial navigation. Hippocampal atrophy is the earliest structural biomarker of Alzheimer's disease.*
+Estructura del lóbulo temporal medial fundamental para la consolidación de memorias declarativas y la navegación espacial. La atrofia hipocampal es el biomarcador estructural más precoz de la enfermedad de Alzheimer.
+*A medial temporal lobe structure fundamental for declarative memory consolidation and spatial navigation. Hippocampal atrophy is the earliest structural biomarker of Alzheimer's disease.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## P
 
 **Proteína Tau / Tau Protein**
-Proteína asociada a microtúbulos que en condiciones patológicas se hiperfosforila, se separa de los microtúbulos y forma agregados intracelulares (ovillos neurofibrilares) característicos de las tauopatías, incluida la enfermedad de Alzheimer.
-*A microtubule-associated protein that under pathological conditions becomes hyperphosphorylated, detaches from microtubules, and forms intracellular aggregates (neurofibrillary tangles) characteristic of tauopathies, including Alzheimer's disease.*
+Proteína asociada a microtúbulos que en condiciones patológicas se hiperfosforila y forma ovillos neurofibrilares intracelulares característicos de las tauopatías, incluida la enfermedad de Alzheimer.
+*A microtubule-associated protein that under pathological conditions becomes hyperphosphorylated and forms intracellular neurofibrillary tangles characteristic of tauopathies, including Alzheimer's disease.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ## S
 
 **Screening Cognitivo / Cognitive Screening**
-Evaluación breve y estandarizada de funciones cognitivas en población general o clínica para identificar posible deterioro cognitivo que requiera evaluación neuropsicológica completa. Instrumentos validados incluyen el MMSE, MoCA, MOCA-Blind y Mini-Cog.
-*A brief, standardized assessment of cognitive functions in general or clinical populations to identify possible cognitive impairment requiring comprehensive neuropsychological evaluation. Validated instruments include the MMSE, MoCA, MOCA-Blind, and Mini-Cog.*
+Evaluación breve y estandarizada de funciones cognitivas para identificar posible deterioro que requiera evaluación neuropsicológica completa. Instrumentos validados: MMSE, MoCA, Mini-Cog.
+*A brief, standardized assessment of cognitive functions to identify possible impairment requiring comprehensive neuropsychological evaluation. Validated instruments: MMSE, MoCA, Mini-Cog.*
 *— De la Serna Tuya, J. M. (2025)*
 
 ---
