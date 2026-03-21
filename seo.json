@@ -1,0 +1,19 @@
+{
+  "title": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "description": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "keywords": "alzheimer, dashboard, multiple-sclerosis, neuroinflammation, neuroscience, open-data, parkinson",
+  "author": "Juan Moisés de la Serna Tuya",
+  "orcid": "https://orcid.org/0000-0002-8401-8018",
+  "canonical": "https://juanmoisesd.github.io/neuroinflammation-neurodegenerative/",
+  "og:title": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "og:description": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "og:url": "https://juanmoisesd.github.io/neuroinflammation-neurodegenerative/",
+  "og:type": "dataset",
+  "twitter:card": "summary",
+  "twitter:title": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "twitter:description": "Interactive dashboard: Neuroinflammation in Alzheimer's, Parkinson's and Multiple Sclerosis. DOI: 10.7910/DVN/X2TQQA",
+  "schema_type": "Dataset",
+  "license": "CC0-1.0",
+  "datePublished": "2026-03-20",
+  "language": "es, en"
+}
